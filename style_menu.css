@@ -20,6 +20,12 @@
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* WHOLE MENU GRID */
+button:visited{
+    text-decoration: none;
+}
+button::after{
+    text-decoration: none;
+}
 *{
     margin: 0rem;
     /*border: 1px solid chartreuse;*/
@@ -59,8 +65,9 @@ html, body, #menu{
     "p19" /*CAMARÓN PARA PELAR*/
     "p20" /*CULICHIS*/
     "p21" /*TORRES*/                                                   /*☗☗☗*/
-    "foot"
-    /*"foot2"*/;
+    "gonzalitas"
+    "moskalti"
+    "foot";
     /*☣☣☣*/
     font-family: 'Poppins', sans-serif;
     width: 100%; /* It is displayed over the whole width, always that html, body and this section have 0 margin */
@@ -89,6 +96,7 @@ html, body, #menu{
 #p19{grid-area: p19;}
 #p20{grid-area: p20;}
 #p21{grid-area: p21;}                                                 /*☗☗☗*/
+#gonzalitas{grid-area: gonzalitas;}
 #foot{grid-area: foot;}
 /* END WHOLE MENU GRID */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -544,7 +552,7 @@ p{
     border-radius: 2rem;
     border-top: 5px solid #00E3BD;
     border-bottom: 5px solid #00E3BD;
-    background-color: #00E3BD;
+    background-color: #adadad;
 }
 /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
 table, tr, td{
@@ -589,6 +597,12 @@ table, tr, td{
     color: white;
     font-weight: 600;
 }
+.mxn_moskalti{
+    border-radius: 1rem;
+    background-color: black;
+    color: rgb(255, 243, 72);
+    font-weight: 600;
+}
 .bottom_border{
     border-bottom: #424242 solid 2px;
 }
@@ -604,6 +618,412 @@ table, tr, td{
     padding-right: 5px;
 }
 /* END PRODUCTS PARTICULAR STRUCTURE */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* GONZALITAS */
+#gonzalitas{
+    /*GONZALITAS Whole Area*/
+    background-color: black;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+    "gonzalitas_logo gonzalitas_logo"
+    "gonzalitas_servicio gonzalitas_servicio"
+    "gonzalitas1 gonzalitas2"
+    "gonzalitas3 gonzalitas4"
+    "p_images_gonzalitas p_images_gonzalitas";
+}
+#gonzalitas1{
+    /*Alitas*/
+    grid-area: gonzalitas1;
+}
+#gonzalitas2{
+    /*Hamburguesas*/
+    grid-area: gonzalitas2;
+}
+#gonzalitas3{
+    /*Salsas*/
+    grid-area: gonzalitas3;
+}
+#gonzalitas4{
+    /*Aderezo y Alita Extra*/
+    grid-area: gonzalitas4;
+}
+#gonzalitas_logo{
+    /*Logotipo*/
+    grid-area: gonzalitas_logo;
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.g1, .g2, .g3{
+    border-collapse: collapse;
+    color: white;
+}
+.g1{
+    grid-area: gonzalitas_servicio;
+    margin-left: auto;
+    margin-right: auto;
+}
+.g3{
+    padding: 1rem;
+    text-align: center;
+}
+.g4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.p_data_gonzalitas{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2rem;
+    border: none;
+    height: max-content;
+    padding: 0.4rem;
+}
+.gonzalitas_h1{
+    border-radius: 1rem;
+    border: white solid 3px;
+    width: fit-content;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+    /*☣☣☣*/
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    /*☣☣☣*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.price_gonzalitas{
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: #ff7011;
+}
+.p_images_gonzalitas{
+    grid-area: p_images_gonzalitas;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "i1 i2 i3 i4";
+    /*☣☣☣*/
+    border-radius: 2rem;
+    border: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+.image_gonzalitas{
+    width: 70%;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 40px black);
+    clip-path: circle();
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.i1{grid-area: i1;}
+.i2{grid-area: i2;}
+.i3{grid-area: i3;}
+.i4{grid-area: i4;}
+/* END GONZALITAS */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+
+
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
+/* MEZCAL MOSKALTI */
+#moskalti{
+    /*Moskalti Whole Area*/
+    grid-area: moskalti;
+    background-color: black;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 4fr 1.5fr 5fr;
+    grid-template-areas:
+    "moskalti_logo moskalti_logo moskalti_logo"
+    "moskalti_social_media moskalti_social_media moskalti_social_media"
+    "p_data_moskalti_1 p_images_moskalti_1 p_images_moskalti_2"
+    "p_data_moskalti_1 p_images_moskalti_1 p_data_moskalti_2"
+    "p_data_moskalti_3 p_data_moskalti_3 p_data_moskalti_3";
+}
+#moskalti0{
+    /*Logotipo*/
+    grid-area: moskalti_logo;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#p_data_moskalti_1{
+    /*Main Product Data*/
+    grid-area: p_data_moskalti_1;
+    background-color: black;
+    /*☣☣☣*/
+    /*☣☣☣*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*☣☣☣*/
+    /*☣☣☣*/
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2rem;
+    border: none;
+    height: max-content;
+    padding: 0.4rem;
+}
+.lighter{
+    font-weight: 400;
+}
+.justify{
+    text-align: justify;
+}
+.smaller_moskalti{
+    font-size: 0.8rem;
+}
+.moskalti_product{
+    font-weight: 900;
+    font-size: 1rem;
+    color: rgb(255, 243, 72);
+}
+.price_moskalti{
+    font-weight: 900;
+    font-size: 0.8rem;
+    color: rgb(255, 243, 72);
+}
+#p_images_moskalti_1{
+    /*Main Images Area*/
+    grid-area: p_images_moskalti_1;
+    background-color: black;
+    /*☣☣☣*/
+    /*☣☣☣*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*☣☣☣*/
+    /*☣☣☣*/
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-areas:
+    "i1"
+    "i2"
+    "i3"
+    "i4";
+    /*☣☣☣*/
+    border-radius: 2rem;
+    border: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+.image_moskalti{
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.i1{grid-area: i1;}
+.i2{grid-area: i2;}
+.i3{grid-area: i3;}
+.i4{grid-area: i4;}
+#p_images_moskalti_2{
+    /*Big Black Image Area*/
+    grid-area: p_images_moskalti_2;
+    background-color: black;
+    /*☣☣☣*/
+    /*☣☣☣*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*☣☣☣*/
+    /*☣☣☣*/
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-areas:
+    "i1";
+    /*☣☣☣*/
+    border-radius: 2rem;
+    border: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    height: fit-content;
+}
+.image_moskalti_big{
+    width: 80%;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.i1{grid-area: i1;}
+.i2{grid-area: i2;}
+.i3{grid-area: i3;}
+.i4{grid-area: i4;}
+#p_data_moskalti_2{
+    /*Moskalti Description Area*/
+    grid-area: p_data_moskalti_2;
+    background-color: black;
+    /*☣☣☣*/
+    /*☣☣☣*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*☣☣☣*/
+    /*☣☣☣*/
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2rem;
+    border: none;
+    height: max-content;
+    padding: 0.4rem;
+    margin-top: 0rem;
+}
+#p_data_moskalti_3{
+    /*Moskalti 3 Info Cards*/
+    grid-area: p_data_moskalti_3;
+    background-color: black;
+    /*☣☣☣*/
+    /*☣☣☣*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    /*☣☣☣*/
+    /*☣☣☣*/
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2rem;
+    border: none;
+    height: max-content;
+    padding: 0.4rem;
+    margin-top: 0rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "m1 m2 m3";
+}
+#m1{grid-area: m1;}
+#m2{grid-area: m2;}
+#m3{grid-area: m3;}
+#m1, #m2, #m3{
+    border-right: 3px solid rgb(255, 243, 72);
+    border-left: 3px solid rgb(255, 243, 72);
+    border-radius: 2rem;
+}
+.card_m td{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.card_title{
+    width: fit-content;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+    /*☣☣☣*/
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    /*☣☣☣*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.card_title_2{
+    width: fit-content;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+    /*☣☣☣*/
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    /*☣☣☣*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.card_zone{
+    width: fit-content;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+    /*☣☣☣*/
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    /*☣☣☣*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.card_common{
+    width: fit-content;
+    color: white;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+#p_data_moskalti_3 img{
+    width: 70px;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bolder_m{
+    font-weight: 900;
+}
+#moskalti_social_media{
+    grid-area: moskalti_social_media;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas:
+    "s1 s2 s3";
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#s1{grid-area: s1;}
+#s2{grid-area: s2;}
+#s3{grid-area: s3;}
+.fa{
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 2rem;
+}
+.fa-whatsapp {
+    background: #13990a;
+}
+.fa-facebook {
+    background: #1778f2;
+}
+/* Instagram */
+.fa-instagram {
+    background: #e21234;
+}
+/* END MEZCAL MOSKALTI */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -900,6 +1320,88 @@ a{
         /*☣☣☣*/
         font-family: 'Poppins', sans-serif;
     }
+    /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
+    #gonzalitas{
+        background-color: black;
+        justify-content: center;
+        padding: 0.5rem;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "gonzalitas_logo gonzalitas_logo"
+        "gonzalitas_servicio gonzalitas_servicio"
+        "gonzalitas1 gonzalitas3"
+        "gonzalitas2 gonzalitas4"
+        "p_images_gonzalitas p_images_gonzalitas";
+    }
+    .p_images_gonzalitas{
+        grid-area: p_images_gonzalitas;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "i1 i2 i3 i4";
+        /*☣☣☣*/
+        border-radius: 2rem;
+        border: none;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .image_gonzalitas{
+        width: 90%;
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(0px 0px 40px black);
+        clip-path: circle();
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .i1{grid-area: i1;}
+    .i2{grid-area: i2;}
+    .i3{grid-area: i3;}
+    .i4{grid-area: i4;}
+    /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
+    #moskalti{
+        /*Moskalti Whole Area*/
+        grid-area: moskalti;
+        background-color: black;
+        justify-content: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 9fr 3fr;
+        grid-template-areas:
+        "moskalti_logo moskalti_logo"
+        "moskalti_social_media moskalti_social_media"
+        "p_data_moskalti_1 p_images_moskalti_1"
+        "p_data_moskalti_2 p_images_moskalti_2"
+        "p_data_moskalti_3 p_data_moskalti_3";
+    }
+    .image_moskalti_big{
+        width: 100%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    #p_images_moskalti_2{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    #p_data_moskalti_3{
+        /*Moskalti 3 Info Cards*/
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+        "m1 m2"
+        "m3 m3";
+    }
+    /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
 }
 @media only screen and (max-width: 550px){
     /*Phone Vertical*/
@@ -1043,6 +1545,126 @@ a{
         clip-path: circle();
         width: 80%;
     }
+    /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
+    #gonzalitas{
+        background-color: black;
+        justify-content: center;
+        padding: 0.5rem;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "gonzalitas_logo"
+        "gonzalitas_servicio"
+        "gonzalitas1"
+        "gonzalitas3"
+        "gonzalitas4"
+        "gonzalitas2"
+        "p_images_gonzalitas";
+    }
+    .p_images_gonzalitas{
+        grid-area: p_images_gonzalitas;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "i1 i2"
+        "i3 i4";
+        /*☣☣☣*/
+        border-radius: 2rem;
+        border: none;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .image_gonzalitas{
+        width: 90%;
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(0px 0px 40px black);
+        clip-path: circle();
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .i1{grid-area: i1;}
+    .i2{grid-area: i2;}
+    .i3{grid-area: i3;}
+    .i4{grid-area: i4;}
+    /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
+    #moskalti{
+        /*Moskalti Whole Area*/
+        grid-area: moskalti;
+        background-color: black;
+        justify-content: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "moskalti_logo"
+        "moskalti_social_media"
+        "p_data_moskalti_1"
+        "p_images_moskalti_1"
+        "p_data_moskalti_2"
+        "p_images_moskalti_2"
+        "p_data_moskalti_3";
+    }
+    .image_moskalti_big{
+        width: 80%;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    #p_images_moskalti_2{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    #p_data_moskalti_3{
+        /*Moskalti 3 Info Cards*/
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-areas:
+        "m1"
+        "m2"
+        "m3";
+    }
+    #p_images_moskalti_1{
+        /*Main Images Area*/
+        grid-area: p_images_moskalti_1;
+        background-color: black;
+        /*☣☣☣*/
+        /*☣☣☣*/
+        /*background-color: rgba(255, 255, 255, 0.1);*/
+        /*☣☣☣*/
+        /*☣☣☣*/
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-areas:
+        "i1"
+        "i2"
+        "i3"
+        "i4";
+        /*☣☣☣*/
+        border-radius: 2rem;
+        border: none;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .image_moskalti{
+        width: 60%;
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    /*☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣☣*/
 }
 /* END REACTIVITY */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
@@ -1083,7 +1705,3 @@ a{
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
 /* ⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙⚙ */
-
-
-
-
